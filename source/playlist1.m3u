@@ -28,3 +28,17 @@ http://31.148.48.15/Terra/index.m3u8
 
 #EXTINF:-1 tvg-id="ctc.ru" tvg-name="СТС" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/66/STS_logo_2019.svg" group-title="Россия HD",СТС HD
 http://a0925677.xsph.ru/hls/CH_KRONEHIT.m3u8
+
+#EXTINF:-1, #EXTVLCOPT:file-caching=1000
+http://vod.orgip.net/vod100/HistoryofEvil/index.m3u8
+
+#EXTINF:-1, #EXTVLCOPT:file-caching=1000
+http://vod.orgip.net/vod100/American_History_X_1998/index.m3u8
+
+#EXTINF:-1,History
+#EXTVLCOPT:file-caching=1000
+http://ip1.orgip.net/414/video.m3u8
+
+#EXTINF:-1,History2
+#EXTVLCOPT:file-caching=1000
+http://ip1.orgip.net/415/video.m3u8?token
