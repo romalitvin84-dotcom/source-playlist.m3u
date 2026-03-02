@@ -1,1 +1,28 @@
-# автоматизация будет здесь позже
+name: Создание плейлиста
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Забрать файлы
+        uses: actions/checkout@v4
+
+      - name: Подготовить Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Запустить программу
+        run: python scripts/merge.py
+
+      - name: Сохранить результат
+        run: |
+          git config user.name github
+          git config user.email github@github.com
+          git add output/final.m3u
+          git commit -m "Создан общий плейлист" || true
+          git push
